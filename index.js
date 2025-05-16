@@ -2,9 +2,9 @@ const { app, BrowserWindow } = require('electron');
 
 function createWindow() {
   const win = new BrowserWindow({
-    width: 500,
-    height: 400,
-    resizable: true,
+    width: 400,
+    height: 500,
+    resizable: true, // ct false avant dcp js sure de quoi mettre
   });
 
   win.loadFile('index.html');

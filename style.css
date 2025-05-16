@@ -1,0 +1,22 @@
+
+
+#bouton{
+    background-image: url('assets/button.gif');
+    background-size: cover; 
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+    width: 1163px;
+    height: 155px;
+    scale:25%;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: absolute;
+    right:900px;
+    display: flex;
+}
+
+
+#pizza{
+    height: 100px;
+}
