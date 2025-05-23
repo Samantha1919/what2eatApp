@@ -8,6 +8,7 @@
 </head>
 <body>
     <h1>What to eat</h1>
+    <img id="image-display" src="assets/pizza.png" width="200"> <!--PAS SURE-->
 <div id="manger">
     <img src="assets/pizza.png" alt="pizza" id="pizza">
     <img src="assets/watermelon.png" alt="pasteque" id="pasteque">
@@ -17,8 +18,56 @@
     <img src="assets/chicken.png" alt="chips" id="chips">
 </div>
     <div id="divb">
-        <button id="bouton"></button>
+        <button id="bouton" onclick="getRandomFood()"></button>
     </div>
+
+<script>
+    let pizza = document.getElementById("pizza");
+    let watermelon = document.getElementById("pasteque");
+    let sushi = document.getElementById("sushi");
+    let ice = document.getElementById("ice");
+    let chips = document.getElementById("chips");
+    let chicken = document.getElementById("chicken");
+    let bouton = document.getElementById("bouton");
+
+
+    function getRandomFood() {
+        // quand je veux mettre le style visibikity voisible je fais cmmt pr le mettre sur tout en 1 fois au lieu de mettre sur chaque aliment sauf si c pas possible ?
+        const images = [
+            'assets/pizza.png',
+            'assets/watermelon.png', // pk ca marche comme ca et il faut pas faire le truc document nanan
+            'assets/sushi.png',
+            'assets/ice.png',
+            'assets/chips.png',
+            'assets/chicken.png',
+        ];
+
+        const imageDisplay = document.getElementById('image-display');
+
+
+            let index = 0;
+            let interval = 100;
+            let elapsed = 0;
+            let totalDuration = 3000;
+
+            let spinning = setInterval(() => {
+                imageDisplay.src = images[index % images.length];
+                index++;
+                elapsed += interval;
+
+                if (elapsed > totalDuration * 0.6) interval += 30;
+
+                if (elapsed >= totalDuration) {
+                clearInterval(spinning);
+                }
+            }, interval);
+        
+    }
+
+
+    // je dois lapeller a la fin ?
+
+</script>
    
 </body>
 </html>
