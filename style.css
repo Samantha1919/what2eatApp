@@ -5,6 +5,7 @@ body {
     justify-content: center; /* centre verticalement si hauteur prise en compte */
     min-height: 100vh;
     margin: 0;
+    background-color: pink;
 }
 
 h1{
@@ -13,15 +14,13 @@ h1{
     font-size: 35px;
 }
 
-#bouton {
-    background-image: url('assets/button.gif');
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 270px; /* ajuste selon la taille du bouton voulu */
-    height: 100px;
+.bouton {
+    width: 280px; /* ajuste selon la taille du bouton voulu */
+    height: auto;
     border: none;
     cursor: pointer;
-    background-color: white;
+    outline: none;
+    
 }
 
 #pizza,

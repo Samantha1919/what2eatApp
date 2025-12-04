@@ -13,24 +13,17 @@
     <!--ducoup avant y avait les photos mais je lai enleve dcp le css ne sacchiffe pas mais jsp si je laisse la div ou pas-->
 </div>
     <div id="divb">
-        <button id="bouton" onclick="getRandomFood()"></button>
+        <img id="bouton" class="bouton" onclick="getRandomFood()" src="assets/button.gif"></img>
     </div>
 
 <script>
-    let pizza = document.getElementById("pizza");
-    let watermelon = document.getElementById("pasteque");
-    let sushi = document.getElementById("sushi");
-    let ice = document.getElementById("ice");
-    let chips = document.getElementById("chips");
-    let chicken = document.getElementById("chicken");
-    let bouton = document.getElementById("bouton");
-
+   
 
     function getRandomFood() {
         // quand je veux mettre le style visibikity voisible je fais cmmt pr le mettre sur tout en 1 fois au lieu de mettre sur chaque aliment sauf si c pas possible ?
         const images = [
             'assets/pizza.png',
-            'assets/watermelon.png', // pk ca marche comme ca et il faut pas faire le truc document nanan
+            'assets/watermelon.png', // pk ca marche comme ca et il faut pas faire le truc document nanan comment ca recup les images avec ce path la
             'assets/sushi.png',
             'assets/ice.png',
             'assets/chips.png',
@@ -62,7 +55,7 @@
     }
 
 
-    // je dois lapeller a la fin ?
+    // pk quand j'appelle la fonction ca tourne en boucle
 
 </script>
    
